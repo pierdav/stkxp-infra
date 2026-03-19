@@ -21,9 +21,8 @@ module.exports = {
     {
       name: "stkxp-app",
       cwd: "/root/stkxp-app",
-      script: "./node_modules/.bin/tsx",
-      args: "server/index.ts",
-      interpreter: "node",
+      script: "server/index.ts",
+      interpreter: "./node_modules/.bin/tsx",
       env: {
         NODE_ENV: "production",
         CONSOLE_LOGS: "false",
