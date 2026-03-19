@@ -17,7 +17,7 @@ deploy_app() {
   echo "▶ Deploying stkxp-app..."
   cd /root/stkxp-app
   git pull origin main
-  pnpm install --frozen-lockfile
+  pnpm install
   npm run build
   pm2 reload stkxp-app
   echo "  ✅ stkxp-app reloaded"
@@ -27,7 +27,7 @@ deploy_mcp() {
   echo "▶ Deploying stkxp-mcp-server..."
   cd /root/stkxp-mcp-server
   git pull origin main
-  pnpm install --frozen-lockfile
+  pnpm install
   npm run build
   pm2 reload stkxp-mcp-server
   echo "  ✅ stkxp-mcp-server reloaded"

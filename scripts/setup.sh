@@ -16,10 +16,10 @@ echo ""
 echo "▶ [1/5] Installing dependencies..."
 
 echo "  → stkxp-app"
-cd /root/stkxp-app && pnpm install --frozen-lockfile
+cd /root/stkxp-app && pnpm install
 
 echo "  → stkxp-mcp-server"
-cd /root/stkxp-mcp-server && pnpm install --frozen-lockfile
+cd /root/stkxp-mcp-server && pnpm install
 
 echo "  → stkxp-api"
 cd /root/stkxp-api && npm install
